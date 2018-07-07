@@ -1,0 +1,231 @@
+Last login: Wed Feb 14 15:47:46 on ttys000
+dhcp-hol-2298:~ frank$ ls -l
+total 48
+drwxr-xr-x   4 frank  staff    128 Feb 13 09:10 AndroidStudioProjects
+drwx------@  5 frank  staff    160 Jan  2 22:48 Applications
+drwxrwxr-x@  3 frank  staff     96 Feb 14 07:13 Creative Cloud Files
+drwx------+ 28 frank  staff    896 Feb 14 14:46 Desktop
+drwx------+ 29 frank  staff    928 Jan 31 23:17 Documents
+drwx------+ 29 frank  staff    928 Feb 14 14:47 Downloads
+-rw-r--r--@  1 frank  staff  23165 Nov 28 08:47 Fall-2017-Internships-for-First-Year-Students.xlsx
+drwx------@ 78 frank  staff   2496 Feb 13 13:55 Library
+drwx------+  5 frank  staff    160 Nov 17 00:56 Movies
+drwx------+  4 frank  staff    128 Nov  6 14:20 Music
+drwx------+  6 frank  staff    192 Nov 10 16:17 Pictures
+drwxr-xr-x+  5 frank  staff    160 Nov  6 09:36 Public
+drwxr-xr-x   4 frank  staff    128 Feb  2 14:44 PycharmProjects
+drwxr-xr-x  26 frank  staff    832 Feb 14 16:14 anaconda3
+drwxr-xr-x   4 frank  staff    128 Dec 21 18:44 eclipse
+drwxr-xr-x   6 frank  staff    192 Dec 21 19:06 eclipse-workspace
+dhcp-hol-2298:~ frank$ cd desktop
+dhcp-hol-2298:desktop frank$ ls -l
+total 170736
+drwxr-xr-x@  4 frank  staff       128 Nov 13 15:27 Amazon
+-rw-r--r--@  1 frank  staff     82774 Nov 13 15:25 Amazon.com - Order 112-9452164-1477016.webarchive
+-rw-r--r--@  1 frank  staff     82774 Nov 13 15:17 Amazon.com - Order 113.webarchive
+-rw-r--r--@  1 frank  staff    362381 Dec 11 11:53 Amazon.com - Your Textbook Rentals.pdf
+-rw-r--r--@  1 frank  staff      4795 Nov 26 22:07 ECE.gif
+-rw-r--r--@  1 frank  staff     62182 Dec 12 06:53 FWS FINAL PORTFOLIO.docx
+-rw-r--r--@  1 frank  staff    476048 Dec 12 06:53 FWS FINAL PORTFOLIO.pdf
+-rw-r--r--@  1 frank  staff     87674 Nov 27 23:41 Frank_Omullo_Resume.pdf
+drwxr-xr-x@  3 frank  staff        96 Jan  8 20:50 GitHub Desktop.app
+-rw-r--r--@  1 frank  staff  69531953 Jan 22 18:22 GitHubDesktop.zip
+drwxr-xr-x@  5 frank  staff       160 Jan 31 22:54 Lab01
+drwxr-xr-x@ 12 frank  staff       384 Feb  7 15:00 Lab02
+drwxr-xr-x@  7 frank  staff       224 Feb 14 14:55 Lab03
+-rw-r--r--@  1 frank  staff    260607 Dec  5 14:38 Make Cornell Meme Again.htm
+drwx------@ 25 frank  staff       800 Dec  5 14:38 Make Cornell Meme Again_files
+drwxr-xr-x@  3 frank  staff        96 Feb 11 15:30 Music
+drwxr-xr-x@  6 frank  staff       192 Dec  7 17:51 MyPlayground.playground
+-rw-r--r--@  1 frank  staff     22528 Nov 30 15:21 NewSchedulingGrid.xls
+-rw-r--r--@  1 frank  staff    143456 Jan  4 18:08 Product_Guideline_Template-Landscape_0004_0T8A0167_1024x1024.jpg
+-rw-r--r--@  1 frank  staff      4214 Jan 19 09:43 Spring 2018_Schedule 2.ics
+-rw-r--r--@  1 frank  staff    128268 Jan 22 17:53 The Cornell Store - Textbooks - Textbooks by Schedule.pdf
+-rw-r--r--@  1 frank  staff    292599 Nov 30 15:20 fitness-monitor-app update.pdf
+drwxr-xr-x@  3 frank  staff        96 Nov  9 10:29 online courses
+-rw-r--r--@  1 frank  staff   1463307 Nov 28 00:33 piccc.png
+dhcp-hol-2298:desktop frank$ cd lab03
+dhcp-hol-2298:lab03 frank$ ls -l
+total 152
+drwxr-xr-x  4 frank  staff    128 Feb 14 15:53 __pycache__
+-rw-r--r--@ 1 frank  staff   5886 Feb 14 14:46 cornellasserts.py
+-rw-r--r--@ 1 frank  staff  59992 Feb 14 14:47 lab03.pdf
+-rw-r--r--@ 1 frank  staff   1129 Feb 14 16:12 lab03.py
+-rw-r--r--@ 1 frank  staff    675 Feb 14 15:57 lab03_test.py
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 1
+DEBUG: before is:m
+DEBUG: after is: thos
+DEBUG: result is:mdthos
+assert_equals: expected 'method' but instead got 'mdthos'
+Line 20 of lab03_test.py: cornellasserts.assert_equals('method', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 1
+DEBUG: before is:m
+DEBUG: after is: thos
+DEBUG: result is:mdthos
+assert_equals: expected 'method' but instead got 'mdthos'
+Line 20 of lab03_test.py: cornellasserts.assert_equals('method', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+Module lab03: all tests passed
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+second test case
+DEBUG: pos is: 2
+DEBUG: before is:Mi
+DEBUG: after is: issippi
+DEBUG: result is:Mississippi
+Third test case
+DEBUG: pos is: 7
+DEBUG: before is:decrepi
+DEBUG: after is: 
+DEBUG: result is:decrepit
+Fourth test case
+DEBUG: pos is: 4
+DEBUG: before is:aggr
+DEBUG: after is: ived
+DEBUG: result is:aggrieived
+assert_equals: expected 'aggrieved' but instead got 'aggrieived'
+Line 32 of lab03_test.py: cornellasserts.assert_equals('aggrieved', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+second test case
+DEBUG: pos is: 2
+DEBUG: before is:Mi
+DEBUG: after is: issippi
+DEBUG: result is:Mississippi
+Third test case
+DEBUG: pos is: 7
+DEBUG: before is:decrepi
+DEBUG: after is: 
+DEBUG: result is:decrepit
+Fourth test case
+DEBUG: pos is: 4
+DEBUG: before is:aggr
+DEBUG: after is: ived
+DEBUG: result is:aggrieived
+assert_equals: expected 'aggrieved' but instead got 'aggrieived'
+Line 32 of lab03_test.py: cornellasserts.assert_equals('aggrieved', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+second test case
+DEBUG: pos is: 2
+DEBUG: before is:Mi
+DEBUG: after is: issippi
+DEBUG: result is:Mississippi
+Third test case
+DEBUG: pos is: 7
+DEBUG: before is:decrepi
+DEBUG: after is: 
+DEBUG: result is:decrepit
+Fourth test case
+DEBUG: pos is: 4
+DEBUG: before is:aggr
+DEBUG: after is: ived
+DEBUG: result is:aggrieived
+assert_equals: expected 'aggrieved' but instead got 'aggrieived'
+Line 32 of lab03_test.py: cornellasserts.assert_equals('aggrieved', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+second test case
+DEBUG: pos is: 2
+DEBUG: before is:Mi
+DEBUG: after is: issippi
+DEBUG: result is:Mississippi
+Third test case
+DEBUG: pos is: 7
+DEBUG: before is:decrepi
+DEBUG: after is: 
+DEBUG: result is:decrepit
+Fourth test case
+DEBUG: pos is: 4
+DEBUG: before is:aggr
+DEBUG: after is: ved
+DEBUG: result is:aggrieved
+Fifth test case
+DEBUG: pos is: 0
+DEBUG: before is:
+DEBUG: after is: 
+DEBUG: result is:umm
+sixth test case
+DEBUG: pos is: 4
+DEBUG: before is:judg
+DEBUG: after is: ment
+DEBUG: result is:judgment
+Seventh test case
+DEBUG: pos is: 0
+DEBUG: before is:
+DEBUG: after is: judgement
+DEBUG: result is:!judgement
+assert_equals: expected 'judgement!' but instead got '!judgement'
+Line 44 of lab03_test.py: cornellasserts.assert_equals('judgement!', result)
+Quitting with Error
+dhcp-hol-2298:lab03 frank$ python lab03_test.py
+Testing lab03.replace_first
+first test case
+DEBUG: pos is: 5
+DEBUG: before is:metho
+DEBUG: after is: 
+DEBUG: result is:method
+second test case
+DEBUG: pos is: 2
+DEBUG: before is:Mi
+DEBUG: after is: issippi
+DEBUG: result is:Mississippi
+Third test case
+DEBUG: pos is: 7
+DEBUG: before is:decrepi
+DEBUG: after is: 
+DEBUG: result is:decrepit
+Fourth test case
+DEBUG: pos is: 4
+DEBUG: before is:aggr
+DEBUG: after is: ved
+DEBUG: result is:aggrieved
+Fifth test case
+DEBUG: pos is: 0
+DEBUG: before is:
+DEBUG: after is: 
+DEBUG: result is:umm
+sixth test case
+DEBUG: pos is: 4
+DEBUG: before is:judg
+DEBUG: after is: ment
+DEBUG: result is:judgment
+Module lab03: all tests passed
+dhcp-hol-2298:lab03 frank$ 

@@ -1,0 +1,76 @@
+Hi, this is Angela Zhang, looking at your Assignment A3.
+
+At the end of this document is the output of our testing program and a table indicating
+the points for each part. 
+
+Functionality
+-------------
+
+Deduction 2 points: You did not remove or comment out the print
+statements in your code. 
+
+Testing
+-------
+
+Deduction: 1 pt. Missing a test for convert_lines_to_paragraph. We were looking for at least 4 tests - another good one would be a list with only empty strings.
+
+Deduction: 3 pts. Missing tests for track_topic.
+
+===========
+
+Running a3test.py
+-----------------
+
+
+[0.25]
+[0.5]
+[1.0]
+[0.333]
+[0.5, 0.667]
+[0.154, 0.135, 0.122, 0.053]
+[0.026, 0.0, 0.0, 0.0]
+[0.026, 0.027, 0.0, 0.0]
+[0.026, 0.0, 0.0, 0.0]
+[0.0]
+[0.5, 0.0]
+[0.5]
+[0.5]
+[]
+[0.0]
+[0.167]
+Start grading of a1.py
+
+Max points for convert_lines_to_string functions: 30
+  convert_lines_to_string(['\n', '\n', '\n']) is '' but should be '  '. 0.5 points deducted.
+  convert_lines_to_string(['\n', '\n\n\n', '\n']) is '' but should be '  '. 0.5 points deducted.
+  convert_lines_to_string(['n', '\n', '\n', 'n', ' ']) is 'n   n' but should be 'n   n '. 0.5 points deducted.
+  convert_lines_to_string(['\n', 'so', 'la', '', 'do', '']) is 'so la do' but should be ' so la do'. 0.5 points deducted.
+  convert_lines_to_string2(['\n', '\n', '\n']) is '' but should be '  '. 0.5 point deducted.
+  convert_lines_to_string2(['\n', '\n\n\n', '\n']) is '' but should be '  '. 0.5 point deducted.
+  convert_lines_to_string2(['n', '\n', '\n', 'n', ' ']) is 'n   n' but should be 'n   n '. 0.5 point deducted.
+  convert_lines_to_string2(['\n', 'so', 'la', '', 'do', '']) is 'so la do' but should be ' so la do'. 0.5 point deducted.
+Finished convert_lines_to_string functions
+
+Max points for convert_lines_to_paragraphs function: 25
+  convert_lines_to_paragraphs(['', '', '']) is [''] but should be []. 1 point deducted.
+Finished convert_lines_to_paragraphs function
+
+Max points for track_topic function: 25
+Finished track_topic function
+
+Max points for finding the bugs in a3test: 9
+Finished finding the bugs in a3test
+
+Max points for tests for functions: 11
+  Deductions above.
+Finished tests for functions
+
+1. convert_lines_to_string functions      26.0 out of  30
+2. convert_lines_to_paragraphs function   24   out of  25
+3. track_topic function                   25   out of  25
+4. finding the bugs in a3test              9   out of   9
+5. tests for functions                     7   out of  11
+------------------------------------------
+Total                                     91.0 out of 100
+Deductions:                               -2
+Total                                      89 out of 100

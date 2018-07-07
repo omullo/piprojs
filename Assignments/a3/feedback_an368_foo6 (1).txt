@@ -1,0 +1,52 @@
+Hi, this is Dana Wintner, looking at your Assignment A4.
+
+At the end of this document is the output of our testing program and a table indicating
+the points for each part. 
+
+Functionality
+-------------
+Great job on this assignment!
+
+In posns_above, there are some duplicates in the list. This happens when sup is appended in your code (line 31) without making sure it is already not in admin. Adding an if-statemnt above line 31 (exactly like in line 34) would make sure that no duplicates are added. 
+	if sup not in admin:
+                admin.append(sup)
+
+Deduction 8 points: In the instructions, we told you to include the root node in the returned dictionary if its holder is a netid. This means you should not add have keys that are None or 0. You did not do this, so we fixed your code to include it.
+	if isinstance(root.holder, str):
+    	   staff[root.holder] = [root]
+If you just cast root.holder to a string, keys like “0” and “None” might be added to your dictionary.
+
+This same thing happens within your for-loop at the line staff[str(sub.holder)] = [sub]. In order to make sure only net-ids are being added, we need to make sure that sub.holder is type string. We also need to make sure that sub.holder is not already a key in our dictionary. An example of a way to check this is
+	if sub not in staff and isinstance(sub.holder, str):
+    	   staff[sub.holder] = [sub]
+
+Testing
+-------
+
+===========
+
+Running a4test.py
+-----------------
+
+
+Start grading of a4.py
+
+Max points for posns_above functions: 40
+  posns_above(Trucks Manager - Holder: Marie) has duplicates: [<Position: President - Holder: Greg; Supervisors: CEO; Subordinates: Exec. Vice President, Trucks Manager>, <Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>, <Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>, <Position: Parts Manager - Holder: Jeff; Supervisors: Exec. Vice President, CEO; Subordinates: Trucks Manager>, <Position: Exec. Vice President - Holder: Jeff; Supervisors: President; Subordinates: Corporate Controller, Parts Manager>] 2 points deducted.
+  posns_above(Parts Manager - Holder: Jeff) has duplicates: [<Position: Exec. Vice President - Holder: Jeff; Supervisors: President; Subordinates: Corporate Controller, Parts Manager>, <Position: President - Holder: Greg; Supervisors: CEO; Subordinates: Exec. Vice President, Trucks Manager>, <Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>, <Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>] 2 points deducted.
+Finished posns_above functions
+
+Max points for map_people_to_positions function: 60
+  map_people_to_positions(CEO - Holder: Harry) has the keys dict_keys(['Harry', 'Greg', 'Jeff', 'Jackie', 'Mary', 'None', 'Sally', '0', 'Marie']) but should have dict_keys(['Harry', 'Greg', 'Jeff', 'Jackie', 'Mary', 'Sally', 'Marie']) 7 points deducted.
+  map_people_to_positions(CEO - Holder: Harry) is missing values. It is {'Harry': [<Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>, <Position: Human Resources Director - Holder: Harry; Supervisors: Receptionist; Subordinates: Accountant>], 'Greg': [<Position: President - Holder: Greg; Supervisors: CEO; Subordinates: Exec. Vice President, Trucks Manager>], 'Jeff': [<Position: Parts Manager - Holder: Jeff; Supervisors: Exec. Vice President, CEO; Subordinates: Trucks Manager>], 'Jackie': [<Position: Corporate Controller - Holder: Jackie; Supervisors: Exec. Vice President; Subordinates: Receptionist>], 'Mary': [<Position: Accountant - Holder: Mary; Supervisors: Human Resources Director, CEO; Subordinates: There are none>], 'Marie': [<Position: Trucks Manager - Holder: Marie; Supervisors: President, CEO, Parts Manager; Subordinates: There are none>]} but should be {'Harry': [<Position: CEO - Holder: Harry; Supervisors: There are none; Subordinates: President, Accountant, Parts Manager, Trucks Manager>, <Position: Human Resources Director - Holder: Harry; Supervisors: Receptionist; Subordinates: Accountant>], 'Greg': [<Position: President - Holder: Greg; Supervisors: CEO; Subordinates: Exec. Vice President, Trucks Manager>], 'Jeff': [<Position: Exec. Vice President - Holder: Jeff; Supervisors: President; Subordinates: Corporate Controller, Parts Manager>, <Position: Parts Manager - Holder: Jeff; Supervisors: Exec. Vice President, CEO; Subordinates: Trucks Manager>], 'Jackie': [<Position: Corporate Controller - Holder: Jackie; Supervisors: Exec. Vice President; Subordinates: Receptionist>], 'Mary': [<Position: Receptionist - Holder: Mary; Supervisors: Corporate Controller; Subordinates: Human Resources Director>, <Position: Accountant - Holder: Mary; Supervisors: Human Resources Director, CEO; Subordinates: There are none>], 'Marie': [<Position: Trucks Manager - Holder: Marie; Supervisors: President, CEO, Parts Manager; Subordinates: There are none>]} 7 points deducted.
+  map_people_to_positions(CEO - Holder: me) is missing values. It is {'me': [<Position: CIO - Holder: me; Supervisors: CEO; Subordinates: Director of Security>, <Position: Director of Security - Holder: me; Supervisors: CIO; Subordinates: There are none>]} but should be {'me': [<Position: CEO - Holder: me; Supervisors: There are none; Subordinates: CTO, CFO, CIO>, <Position: CTO - Holder: me; Supervisors: CEO; Subordinates: Director of Eng>, <Position: Director of Eng - Holder: me; Supervisors: CTO; Subordinates: There are none>, <Position: CFO - Holder: me; Supervisors: CEO; Subordinates: There are none>, <Position: CIO - Holder: me; Supervisors: CEO; Subordinates: Director of Security>, <Position: Director of Security - Holder: me; Supervisors: CIO; Subordinates: There are none>]} 7 points deducted.
+Finished map_people_to_positions function
+
+1. posns_above functions              36 out of  40
+2. map_people_to_positions function   39 out of  60
+--------------------------------------
+Total                                 75 out of 100
+Deductions:                           
+				      -8
+
+Total                                 67 out of 100
