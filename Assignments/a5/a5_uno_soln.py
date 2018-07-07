@@ -1,7 +1,6 @@
 # a5_uno.py
-# STUDENTS: PLACE YOUR NAME AND NETID HERE
-# Sources/people consulted:  STUDENTS: FILL IN OR WRITE "None"
-# STUDENTS: PUT DATE YOU COMPLETED THIS HERE
+# STUDENTS: Frank Omullo
+# Sources/people consulted:  STUDENTS: "None"
 # skeleton by:
 #     Anthony Poon (ATP65)
 #     Victoria Litvinova (VL242) - simple edits
