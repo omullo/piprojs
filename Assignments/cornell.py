@@ -1,6 +1,4 @@
 # cornellasserts.py
-# Walker M. White (wmw2), Lillian Lee (LJL2), Steve Marschner (srm2)
-# Feb 10, 2018
 
 """Support functions for testing.
 
